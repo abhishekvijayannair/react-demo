@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mottu Mahan</title>
+    <style>
+      #namePara {
+        color: darkgreen;
+      }
+      .para {
+        color: darkmagenta;
+      }
+    </style>
+    <script>
+      function myFunction() {
+        var x = document.getElementsByClassName("para");
+        for (var i = 0; i < x.length; i++) {
+          if (x[i].style.display === "none") {
+            x[i].style.display = "block";
+          } else {
+            x[i].style.display = "none";
+          }
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1 style="text-align: center">This is demo application</h1>
+    <p><b>Hello World!</b></p>
+    <br />
+    <button onclick="myFunction()">Try me!</button>
+    <p id="p1" class="para" align="left">Here is a first paragraph of text.</p>
+    <p id="p2" class="para" align="center">
+      Here is a second paragraph of text.
+    </p>
+    <p id="p3" class="para" align="right">Here is a third paragraph of text.</p>
+    <p id="p4" class="para" align="right">Here is a fourth paragraph of text.</p>
+
+    <hr />
+    <p id="namePara">
+      My name is <span style="color: brown">Abhilash.</span>&nbsp;AGE:28
+    </p>
+    <!-- <center><h1>hasdhasdh</h1></center> -->
+    <div style="width: 50vh;"><img src="img.jpg"></img> </div>
+  </body>
+</html>
